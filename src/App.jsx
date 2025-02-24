@@ -1,4 +1,4 @@
-import Beli from "../components/beli";
+import Beli from "./components/beli";
 import { useState, useEffect } from "react";
 import axios from "axios";
 

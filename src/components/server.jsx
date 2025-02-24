@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Main from "../pages/App";
+import Main from "../App";
 
 export default function Server() {
   const [serverStatus, setServerStatus] = useState(null); // null untuk loading
