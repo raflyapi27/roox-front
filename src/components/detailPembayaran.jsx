@@ -106,7 +106,7 @@ const DetailPembayaran = () => {
         try {
           // Kirim permintaan ke backend untuk membuat voucher di Mikrotik
           const response = await fetch(
-            "http://serveo.net:8080/api/create-voucher-after-payment",
+            "https://roox.starlaxy.site/api/create-voucher-after-payment",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },

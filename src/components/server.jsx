@@ -8,7 +8,7 @@ export default function Server() {
   useEffect(() => {
     const checkServerStatus = async () => {
       try {
-        await axios.get("http://serveo.net:8080/active-users");
+        await axios.get("https://roox.starlaxy.site/active-users");
         setServerStatus("up!");
       } catch (error) {
         setServerStatus("down");

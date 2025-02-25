@@ -10,7 +10,7 @@ export default function ActiveUsers() {
     const fetchActiveUsers = async () => {
       try {
         const response = await axios.get(
-          "http://serveo.net:8080/active-users"
+          "https://roox.starlaxy.site/active-users"
         );
 
         if (response.data && typeof response.data.count === "number") {
@@ -74,7 +74,7 @@ export default function ActiveUsers() {
       {error && <p className="text-red-500 mt-3">{error}</p>}
 
       {/* Gambar */}
-      <img className="w-52 my-5" src="/src/assets/wifi.svg" alt="WiFi Icon" />
+      <img className="w-52 my-5" src="wifi.svg" alt="WiFi Icon" />
 
       {/* Tombol Beli */}
       <div className="flex flex-col md:flex-row items-center gap-8">

@@ -21,14 +21,14 @@ export default function Beli() {
     <div className="flex items-center">
       <div
         onClick={goToProduk}
-        className="flex items-center bg-sky-500 rounded w-max px-3 mt-6 p-2 cursor-pointer"
+        className="flex items-center bg-emerald-700 rounded w-max px-3 mt-6 p-2 cursor-pointer shadow-md hover:bg-emerald-600"
       >
-        <img src="./src/assets/voucher.svg" className="w-8 absolute mb-4" />
-        <p className="text-1xl ml-10 font-medium bg-sky-500">Beli Online</p>
+        <img src="voucher.svg" className="w-7 absolute mb-4" />
+        <p className="text-1xl ml-10 font-medium">Beli Online</p>
       </div>
       <div className="flex items-center mt-8 ml-2">
         <p className="text-xs mt-2 ml-1">mulai</p>
-        <p className="text-2xl font-medium ml-1">Rp1.000</p>
+        <p className="text-xl sm:text-2xl md:text-2xl font-medium ml-1">Rp1.000</p>
       </div>
     </div>
     {isProcessing && (

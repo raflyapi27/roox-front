@@ -21,7 +21,7 @@ const Voucher = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          "http://serveo.net:8080/active-users"
+          "https://roox.starlaxy.site/active-users"
         );
         setActiveUsers(response.data?.users || []); // Gunakan fallback agar tidak error
       } catch (error) {
@@ -47,7 +47,7 @@ const Voucher = () => {
   return (
     <div className="flex items-center mt-6">
       <div className="bg-emerald-700 w-max pr-5 py-2 rounded shadow-md">
-        <p className="text-white text-xl ml-2">
+        <p className="text-white text-base ml-2">
           {loading ? "Loading..." : voucher}
         </p>
       </div>

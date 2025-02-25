@@ -36,7 +36,7 @@ const Produk = () => {
     setLoading(true);
     try {
       const orderId = `roox-${Date.now()}`; // Menggunakan prefix "roox-"
-      const response = await axios.post("http://serveo.net:8080/api/payment", {
+      const response = await axios.post("https://roox.starlaxy.site/api/payment", {
         orderId,
         grossAmount: selectedProduct.price,
         customerName,
